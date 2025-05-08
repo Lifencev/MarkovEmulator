@@ -1,0 +1,7 @@
+body {font-family: system-ui, sans-serif; max-width: 700px; margin: 2rem auto;}
+textarea, input {width: 100%;}
+pre {background: #f6f8fa; padding: .5rem;}
+li {font-family: monospace;}
+#output.error { color: crimson; }
+#error, .error { color: crimson; font-weight: bold; }
+#rules { height: 180px;}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Normal Markov Emulator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Normal Markov Algorithm Emulator</h1>
+
+  <form id="run-form">
+    <label>Input word<br>
+      <input name="word" id="word" value="">
+    </label><br><br>
+
+    <label>Rules (pattern“:”replacement, “.” marks terminal)<br>
+      <textarea name="rules" id="rules" rows="6" cols="40"></textarea>
+    </label><br>
+
+    <button type="submit">Run</button>
+  </form>
+
+  <h2>Output</h2>
+  <pre id="output"></pre>
+
+  <h2>Trace</h2>
+  <ul id="trace"></ul>
+
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
